@@ -107,14 +107,23 @@
 /* Esercizio 11 */
 
 .ex-11-icon:hover {
-    animation: rotateYourself--less ease-out 3s alternate-reverse;
+    animation: rotateYourself--less 2s linear;
 }
 
 @keyframes rotateYourself--less {
  0% {
     transform: rotate(0deg);
  }   
- 75% {
-    transform: rotate(270deg);
+ 90% {
+    transform: rotate(300deg);
+ }
+ 100% {
+    transform: rotate(0deg);
  }
 }
+
+/* Esercizio 12 */
+
+
+
+/* Esercizio 13 */
