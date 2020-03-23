@@ -111,19 +111,43 @@
 }
 
 @keyframes rotateYourself--less {
- 0% {
+ 0%,
+ 100% {
     transform: rotate(0deg);
  }   
  90% {
     transform: rotate(300deg);
  }
- 100% {
-    transform: rotate(0deg);
- }
 }
 
 /* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white {
+    animation: hiddenFakeTop 2s linear;
+}
 
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: hiddenFakeBottom 2s linear;
+}
+
+@keyframes hiddenFakeTop {
+    0%,
+    100% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+}
+
+@keyframes hiddenFakeBottom {
+    0%,
+    100% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+}
 
 
 /* Esercizio 13 */
